@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Beshojite Saha Neloy, aspiring software engineer." />
+  <title>Beshojite Saha Neloy | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <a href="#home" class="logo">Neloy<span>.</span></a>
+
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle dark / light theme">🌙</button>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HOME ============ -->
+    <section id="home" class="hero">
+      <div class="hero-text reveal">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Beshojite Saha <span class="gradient-text">Neloy</span></h1>
+        <h2 class="typing">I'm a <span id="typed"></span><span class="cursor">|</span></h2>
+        <p class="hero-desc">
+          A passionate student on the path to becoming a software engineer. I enjoy solving
+          problems, writing clean code and building things that work on the web.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Contact Me</a>
+          <a href="#skills" class="btn btn-outline">View Skills</a>
+        </div>
+      </div>
+
+      <div class="hero-photo reveal">
+        <div class="photo-ring">
+          <!-- Put your photo at: images/neloy.png -->
+          <img src="images/neloy.png" alt="Beshojite Saha Neloy"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="photo-fallback" style="display:none;">BSN</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
+      <h2 class="section-title reveal">About <span class="gradient-text">Me</span></h2>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Hi! I'm <strong>Beshojite Saha Neloy</strong>, a student who is currently pursuing my
+            studies with the goal of becoming a professional software engineer.
+          </p>
+          <p>
+            I love learning how software works, from the logic behind algorithms to the
+            interfaces people use every day. I am building a strong foundation in programming,
+            data structures, databases and web development, and I'm always eager to learn new
+            tools and technologies.
+          </p>
+          <p>
+            I believe in consistent practice, teamwork and writing code that is simple,
+            readable and useful.
+          </p>
+        </div>
+
+        <div class="info-card reveal">
+          <h3>Personal Info</h3>
+          <ul>
+            <li><span>Full Name</span><b>Beshojite Saha Neloy</b></li>
+            <li><span>Student ID</span><b>251-35-092</b></li>
+            <li><span>Date of Birth</span><b>February 8, 2005</b></li>
+            <li><span>Email</span><b><a href="mailto:251-35-092@gmail.com">251-35-092@gmail.com</a></b></li>
+            <li><span>Status</span><b>Currently studying</b></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="stats reveal">
+        <div class="stat"><h3 data-count="10" data-suffix="+">0</h3><p>Technologies Learning</p></div>
+        <div class="stat"><h3 data-count="100" data-suffix="%">0</h3><p>Dedication</p></div>
+        <div class="stat"><h3 data-count="24" data-suffix="/7">0</h3><p>Curiosity</p></div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section id="education" class="section alt">
+      <h2 class="section-title reveal">Academic <span class="gradient-text">Background</span></h2>
+      <p class="section-sub reveal">My learning journey toward becoming a software engineer.</p>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <span class="dot"></span>
+          <div class="timeline-card">
+            <span class="badge">Present</span>
+            <h3>Bachelor's Degree (Ongoing)</h3>
+            <p class="muted">Student ID: 251-35-092</p>
+            <p>
+              Currently pursuing my undergraduate studies with a focus on software engineering
+              fundamentals, building a strong base in programming, problem solving and web development.
+            </p>
+            <div class="chips small">
+              <span>Programming</span><span>Data Structures</span><span>Algorithms</span>
+              <span>OOP</span><span>Databases</span><span>Web Technologies</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <span class="dot"></span>
+          <div class="timeline-card">
+            <span class="badge alt-badge">Goals</span>
+            <h3>Where I'm Heading</h3>
+            <p>
+              <b>Short term:</b> master data structures &amp; algorithms, build real projects and
+              publish them on GitHub.<br />
+              <b>Long term:</b> grow into a professional software engineer who builds reliable,
+              useful products.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section">
+      <h2 class="section-title reveal">My <span class="gradient-text">Skills</span></h2>
+      <p class="section-sub reveal">The core skills every software engineer builds, and what I'm working on.</p>
+
+      <div class="skills-grid">
+
+        <div class="skill-card reveal">
+          <h3>💻 Programming Languages</h3>
+          <div class="skill"><div class="skill-head"><span>C / C++</span><span>75%</span></div><div class="bar"><div class="fill" data-level="75"></div></div></div>
+          <div class="skill"><div class="skill-head"><span>Python</span><span>70%</span></div><div class="bar"><div class="fill" data-level="70"></div></div></div>
+          <div class="skill"><div class="skill-head"><span>Java</span><span>65%</span></div><div class="bar"><div class="fill" data-level="65"></div></div></div>
+          <div class="skill"><div class="skill-head"><span>JavaScript</span><span>70%</span></div><div class="bar"><div class="fill" data-level="70"></div></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <h3>🌐 Web Development</h3>
+          <div class="skill"><div class="skill-head"><span>HTML5</span><span>90%</span></div><div class="bar"><div class="fill" data-level="90"></div></div></div>
+          <div class="skill"><div class="skill-head"><span>CSS3 / Responsive Design</span><span>80%</span></div><div class="bar"><div class="fill" data-level="80"></div></div></div>
+          <div class="skill"><div class="skill-head"><span>React.js</span><span>50%</span></div><div class="bar"><div class="fill" data-level="50"></div></div></div>
+          <div class="skill"><div class="skill-head"><span>Node.js / REST APIs</span><span>50%</span></div><div class="bar"><div class="fill" data-level="50"></div></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <h3>🗄️ Databases</h3>
+          <div class="skill"><div class="skill-head"><span>SQL / MySQL</span><span>70%</span></div><div class="bar"><div class="fill" data-level="70"></div></div></div>
+          <div class="skill"><div class="skill-head"><span>MongoDB</span><span>45%</span></div><div class="bar"><div class="fill" data-level="45"></div></div></div>
+          <div class="skill"><div class="skill-head"><span>Database Design (ER, Normalization)</span><span>65%</span></div><div class="bar"><div class="fill" data-level="65"></div></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <h3>🧠 CS Fundamentals</h3>
+          <div class="skill"><div class="skill-head"><span>Data Structures &amp; Algorithms</span><span>70%</span></div><div class="bar"><div class="fill" data-level="70"></div></div></div>
+          <div class="skill"><div class="skill-head"><span>Object-Oriented Programming</span><span>75%</span></div><div class="bar"><div class="fill" data-level="75"></div></div></div>
+          <div class="skill"><div class="skill-head"><span>Operating Systems &amp; Networking</span><span>55%</span></div><div class="bar"><div class="fill" data-level="55"></div></div></div>
+        </div>
+
+      </div>
+
+      <div class="tools reveal">
+        <h3>🛠️ Tools &amp; Practices</h3>
+        <div class="chips">
+          <span>Git</span><span>GitHub</span><span>Linux / CLI</span><span>VS Code</span>
+          <span>Postman</span><span>Debugging</span><span>Unit Testing</span><span>Agile / Scrum</span>
+          <span>Clean Code</span><span>Documentation</span>
+        </div>
+      </div>
+
+      <div class="tools reveal">
+        <h3>🤝 Soft Skills</h3>
+        <div class="chips soft">
+          <span>Problem Solving</span><span>Teamwork</span><span>Communication</span>
+          <span>Time Management</span><span>Quick Learner</span><span>Critical Thinking</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section alt">
+      <h2 class="section-title reveal">My <span class="gradient-text">Projects</span></h2>
+      <p class="section-sub reveal">Things I have built while learning.</p>
+
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="project-thumb">&lt;/&gt;</div>
+          <div class="project-body">
+            <h3>Personal Portfolio Website</h3>
+            <p>
+              A fully responsive portfolio with dark/light theme, typing animation, animated skill
+              bars, scroll effects and a validated contact form. Deployed online.
+            </p>
+            <div class="chips small"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </div>
+        </article>
+
+        <article class="project-card upcoming reveal">
+          <div class="project-thumb">+</div>
+          <div class="project-body">
+            <h3>Next Project</h3>
+            <p>
+              I'm currently learning and practicing every day. More projects will be added here
+              soon as I build them.
+            </p>
+            <div class="chips small"><span>Coming soon</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section">
+      <h2 class="section-title reveal">Get In <span class="gradient-text">Touch</span></h2>
+      <p class="section-sub reveal">Have a question, an idea or an opportunity? Send me a message.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-item">
+            <span class="ci-icon">✉️</span>
+            <div><h4>Email</h4><a href="mailto:251-35-092@gmail.com">251-35-092@gmail.com</a></div>
+          </div>
+          <div class="contact-item">
+            <span class="ci-icon">🎓</span>
+            <div><h4>Student ID</h4><p>251-35-092</p></div>
+          </div>
+          <div class="contact-item">
+            <span class="ci-icon">📘</span>
+            <div><h4>Status</h4><p>Currently studying</p></div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Enter your name" />
+            <small class="error"></small>
+          </div>
+          <div class="field">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="Enter your email" />
+            <small class="error"></small>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Write your message..."></textarea>
+            <small class="error"></small>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Beshojite Saha Neloy. All rights reserved.</p>
+    <a href="#home" class="to-top" aria-label="Back to top">↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
